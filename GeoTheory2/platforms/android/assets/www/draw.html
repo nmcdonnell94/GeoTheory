@@ -1,0 +1,49 @@
+<!-- Author: Natalie McDonnell  -->
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/draw.css">
+        <title>Draw Conic</title>
+    </head>
+    <body onload="startup()">
+    
+    	<div class="title">
+    		<h1>Drawing Conics</h1>
+    		<p style="display:block;">(scroll down for info)</p>
+    		<button onclick="parent.location='index.html'">Back</button>
+    		<button onclick="startup()">Reset</button>
+    		<input id="hide" type = "submit" onclick="hide()" value="Hide"></input>
+    		
+    		<canvas id="myCanvas"></canvas>
+    	</div>
+    		
+    	<div class="info">
+    		<p style="font-size:17px;"><b> Instructions</b></p>
+    		<p>Position the blue points then move the green point to draw your conic.</p>
+    		
+    		<p style="font-size:17px;"><b>What's a conic?</b></p>
+    		<p>A <b>conic</b> is a curve that is formed by taking the intersection of a plane and a cone. There
+    			are three types: </p>
+    		<ul>
+    			<li>parabola,</li>
+    			<li>ellipse or circle,</li>
+    			<li>hyperbola.</li>
+    		</ul>
+    		
+    		<p>The tool above can help you draw them.</p>
+    		
+    		<p style="font-size:17px;"><b>How is it done?</b><p>
+    		<p>By choosing 5 points (blue points), these points will always define a conic and Pascal's 
+    			theorem can help draw it by finding a 6th point that will always lie on the conic (the big red point).</p>
+    		
+			<p>Moving the green point will change where the big red point lies on the conic and hence how the conic is drawn.</p>
+    	</div>
+    	<br>
+    	
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/model.js"></script>
+        <script type="text/javascript" src="js/controller.js"></script>
+        <script type="text/javascript" src="js/draw.js"></script>
+    </body>
+</html>

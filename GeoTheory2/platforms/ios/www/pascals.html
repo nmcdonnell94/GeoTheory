@@ -1,0 +1,35 @@
+<!-- Author: Natalie McDonnell  -->
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/pascals.css">
+        <title>Pascal's Theorem</title>
+    </head>
+    <body onload="startup()">
+    	
+    	<div class="title">
+    		<h1>Pascal's Theorem</h1>
+    		<p style="font-size: 11px;">(scroll down for info)</p>
+    		<button onclick="parent.location='index.html'">Back</button>
+    		<button onclick="startup()">Reset</button>
+    		<canvas id="myCanvas"></canvas>
+    	</div>
+    	
+    	<div class="info">
+    		<p style="font-size: 17px;"><b>Instructions</b></p>
+    		<p>Try moving the blue points on the circle and watch what happens to the dashed line, this will show Pascal's Theorem. </p>
+    		
+    		<p style="font-size: 17px;"><b>Pascal's Theorem</b></p>
+    		<p>Pascal's theorem states that if we take six randomly chosen points on a circle (or a conic) and 
+    			join them to form a hexagon, then there will be three points which are the intersections of the 
+    				pairs of opposites sides of the hexagon. These three points lie on a straight line.</p>
+    		<br>
+    	</div>
+    	
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/model.js"></script>
+        <script type="text/javascript" src="js/controller.js"></script>
+        <script type="text/javascript" src="js/pascals.js"></script>
+    </body>
+</html>
